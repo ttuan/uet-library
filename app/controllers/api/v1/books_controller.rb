@@ -8,7 +8,7 @@ class Api::V1::BooksController  < ApplicationController
 
 
   def show
-    respond_with  User.find(params[:id])
+    respond_with  Book.find(params[:id])
   end
 
   def create
