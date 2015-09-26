@@ -2,7 +2,7 @@
 
 <div class="row">
   <aside class="col-md-3">
-    <img src= "<%= @book.image %>" alt="rss feed" />
+    <%= image_tag @book.image, size: "150x200" %>
   </aside>
   <aside class="col-md-9">
     <h3><%= @book.name %></h3>
