@@ -1,0 +1,15 @@
+<% provide :title, @book.name %>
+
+<div class="row">
+  <aside class="col-md-3">
+    <img src= "<%= @book.image %>" alt="rss feed" />
+  </aside>
+  <aside class="col-md-9">
+    <h3><%= @book.name %></h3>
+    <h5> by <%= @book.author %></h5>
+    <h3>Details here</h3>
+    Name: <%= @book.name.split.map(&:capitalize).join(' ') %><br>
+    Description: <%= @book.description %>
+  </aside>
+</div>
+

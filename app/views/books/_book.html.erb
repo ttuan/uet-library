@@ -1,0 +1,12 @@
+<div class="col-md-2">
+  <%= link_to book do %>
+    <div class="thumbnail">
+    <%= image_tag book.image, size: "150x200" %>
+    <% if book.name.length >25 %>
+      <%= book.name.split.map(&:capitalize).join(' ')[0..25] %>...
+    <% else %>
+      <%= book.name.split.map(&:capitalize).join(' ') %>
+    <% end %>
+    </div>
+  <% end %>
+</div>

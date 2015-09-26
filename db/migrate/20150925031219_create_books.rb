@@ -4,9 +4,9 @@ class CreateBooks < ActiveRecord::Migration
       t.string :name
       t.string :description
       t.string :author
-      t.string :category
       t.integer :publish_year
       t.string :image
+      t.references :category, index: true, foreign_key: true
 
       t.timestamps null: false
     end
